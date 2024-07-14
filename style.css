@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: url(hip2.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+.blur{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+}
+.header {
+    width: 100%;
+    height: 80px;
+    background: rgb(8, 2, 20);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fade 1s ease forwards;
+}
+.logo h1{
+    font-size: 40px;
+    padding: 10px;
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    animation: fade 1.5s ease forwards;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+}
+.navbar ul li a:hover{
+    color: orange;
+    transition: .4s;
+}
+.login{
+   
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid orange;
+    border-radius: 30px;
+    transition: .5s;
+    cursor: pointer;
+    animation: fade 1.9s ease forwards;
+
+}
+.login:hover {
+    background: orange;
+    transition: .4s;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    
+}
+.main-content{
+    position: relative;
+    left: 15%;
+    max-width: 700px;
+    height: auto;
+    padding: 20px;
+}
+.main-content h2{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 15px;
+    animation: fade 2.2s ease forwards;
+
+}
+.main-content h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: orange;
+    animation: fade 2.7s ease forwards;
+
+}
+.main-content p {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: white;
+    animation: fade 3.1s ease forwards;
+
+}
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fade 4s ease forwards;
+
+}
+.buttons p{
+    width: 150px;
+    height: 50px;
+    border: 2px solid orange;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.buttons p:hover{
+    background: orange;
+    transition: .4s;
+}
+.buttons p a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .4s;
+}
+.buttons p a:hover{
+    color: rgb(4, 5, 39);
+    transition: .4s;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hero1{
+    background: url(sid.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.service{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+.service h1{
+    color: orange;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    transition: .5s;
+}
+.service-content{
+    padding: 20px;
+    margin-top: 60px;
+    width: 80%;
+    height: 60vh;
+    position: relative;
+    left: 11%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: colum;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 5px 10px 15px orange;
+    transition: .5s;
+}
+.service-content:hover{
+    box-shadow: 5px 5px 10px 15px rgb(210, 194, 163);
+    transition: .4s;
+
+}
+
+.service-box {
+    border: 2px solid white;
+    max-width: 350px;
+    height: auto;
+    transition: .5s;
+    
+}
+.service-box:hover{
+    transform: scaleX(1.2);
+    transition: .5s;
+}
+.service-box img {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+}
+.service-box .div h1{
+    font-size: 35px;
+    text-align: left;
+}
+.service-box .div p{
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+.service-box .div p a{
+    color: white;
+    text-decoration: none;
+    color: green;
+}
+.about {
+    width: 100%;
+    height: 90vh;
+}
+.about-us {
+    padding: 20px 80px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-us .head {
+    text-align: center;
+    font-size: 70px;
+    color: orange;
+}
+.about-history{
+    position: relative;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+}
+.about-history img{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.about-history img:hover{
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+.history-content{
+    padding: 10px;
+    color: white;
+}
+.history-content h1{
+    font-size: 50px;
+    color: coral;
+}
+.history-content p{
+    background: rgba(0, 0, 0,.7);
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.btn{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-top-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    transition: .4s;
+    margin-left: 30px;
+}
+.btn:hover{
+    transform: scaleX(1.2);
+    transition: .4s;
+}
+.contact{
+    width: 100%;
+    height: 55vh;
+    background: rgb(5, 2, 31);
+}
+.contact h1 {
+    text-align: center;
+    font-size: 50px;
+    color: orange;
+}
+.contact-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container ul li {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    color: white;
+}
+.contact-container ul li:nth-child(3)::marker{
+    content: '☎';
+    color: red;
+}
+.contact-container ul li:nth-child(2)::marker{
+    content: '🌆';
+    color: red;
+}
+.contact-container ul li:nth-child(1)::marker{
+    content: '🔄';
+    color: red;
+}
+.contact-container ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(163, 163, 188);
+}
+
+.socials{
+    margin-top: 10px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.socials p {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orange;
+    transition: .5s;
+}
+.socials p:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: orange;
+    transition: .5s;
+}
+.socials p a{
+    text-decoration: none;
+    color: orange;
+
+}
+.socials p a i {
+    font-size: 20px;
+    transition: .4s;
+}
+.socials p a i:hover{
+    color: white;
+    transition: .4s;
+}
+.rights p {
+    font-size: 20px;
+    font-weight: bold;
+    color: coral;
+    margin-top: 20px;
+}
